@@ -15,7 +15,7 @@
         <p>
           Hola, me llamo <strong class="text-indigo-500">Omar Santos</strong>
         </p>
-        <p>y soy <strong>Full Stack Developer</strong></p>
+        <p>y soy <strong class="font-semibold">Full Stack Developer</strong></p>
       </div>
     </div>
   </section>
