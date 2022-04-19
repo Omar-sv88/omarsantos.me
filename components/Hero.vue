@@ -1,6 +1,6 @@
 <template>
-  <section class="mb-4 bg-black w-full">
-    <div class="relative container mx-auto">
+  <section class="mb-20 lg:mb-4 bg-black w-full">
+    <div class="lg:relative container mx-auto">
       <header class="flex items-center justify-center lg:justify-end">
         <img
           :class="{ show: isMounted }"
@@ -9,7 +9,9 @@
         />
       </header>
 
-      <div class="about-me rounded absolute py-4 px-8 bg-gray-100 text-2xl">
+      <div
+        class="about-me relative lg:absolute shadow-md mx-auto rounded py-4 px-8 bg-gray-100 text-2xl"
+      >
         <p>
           Hola, me llamo <strong class="text-indigo-500">Omar Santos</strong>
         </p>
@@ -32,35 +34,33 @@ export default {
 }
 </script>
 
-<style scooped>
-section,
-.container {
-  height: 804px;
-}
-
+<style scoped>
 .about-me {
   width: calc(100% - 2rem);
-  bottom: 2rem;
-  left: 50%;
-  transform: translate(-50%, 0);
+  top: 3rem;
 }
 
 @media (min-width: 1024px) {
   .about-me {
     width: 50%;
-    bottom: unset;
     top: 50%;
     left: 2rem;
-    transform: translate(0, -50%);
+    transform: translate(0 -50%);
   }
 }
 
 img {
   width: 100%;
-  max-width: 500px;
+  max-width: 250px;
   height: auto;
   opacity: 0;
   transition: opacity 300ms ease-in-out;
+}
+
+@media (min-width: 1024px) {
+  img {
+    max-width: 500px;
+  }
 }
 
 img.show {
