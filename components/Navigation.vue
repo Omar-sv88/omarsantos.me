@@ -37,14 +37,21 @@ export default {
     }
   },
   mounted() {
-    if (this.changeBgOnScroll) this.changeNavBg()
+    if (this.changeBgOnScroll) this.addWindowScrollListener()
+  },
+  destroyed() {
+    this.removeWindowScrollListener()
   },
   methods: {
+    addWindowScrollListener() {
+      window.addEventListener('scroll', this.changeNavBg)
+    },
+    removeWindowScrollListener() {
+      window.removeEventListener('scroll', this.changeNavBg)
+    },
     changeNavBg() {
-      window.addEventListener('scroll', () => {
-        const scrollTop = document.documentElement.scrollTop
-        this.isScrolled = scrollTop > 0
-      })
+      const scrollTop = document.documentElement.scrollTop
+      this.isScrolled = scrollTop > 0
     },
   },
 }
