@@ -1,7 +1,7 @@
 <template>
   <section>
     <header class="mb-4">
-      <h2 class="font-semibold">{{ title }}</h2>
+      <h2 class="font-semibold text-2xl">{{ title }}</h2>
     </header>
     <div
       v-if="articles.length > 0"
@@ -37,7 +37,7 @@ export default {
     title: {
       type: String,
       required: false,
-      default: 'Últimos artículos',
+      default: 'Últimos artículos ✍',
     },
     category: {
       type: String,

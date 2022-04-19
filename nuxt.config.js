@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'eMotionDev - Web Developer',
+    title: 'Omar Santos - Full Stack Developer',
     htmlAttrs: {
       lang: 'en',
     },

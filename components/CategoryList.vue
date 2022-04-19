@@ -1,7 +1,7 @@
 <template>
   <section>
     <header class="mb-4">
-      <h2 class="font-semibold">Categorías</h2>
+      <h2 class="font-semibold text-2xl">Categorías 🏷</h2>
     </header>
     <div class="content">
       <ul class="flex items-center gap-4 flex-wrap">
