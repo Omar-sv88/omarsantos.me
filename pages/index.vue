@@ -1,5 +1,8 @@
 <template>
-  <Wrapper>
+  <Wrapper :with-margin-bottom="false">
+    <template #before-container>
+      <Hero />
+    </template>
     <template #content>
       <ArticleList />
       <CategoryList />
@@ -11,12 +14,13 @@
 </template>
 
 <script>
-import ArticleList from '~/components/ArticleList.vue'
 import Wrapper from '~/components/Wrapper.vue'
-import Footer from '~/components/Footer.vue'
+import Hero from '~/components/Hero.vue'
+import ArticleList from '~/components/ArticleList.vue'
 import CategoryList from '~/components/CategoryList.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
-  components: { ArticleList, Wrapper, Footer, CategoryList },
+  components: { ArticleList, Wrapper, Footer, CategoryList, Hero },
 }
 </script>
