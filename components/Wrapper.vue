@@ -1,10 +1,10 @@
 <template>
   <section>
-    <Navigation />
+    <Navigation :change-bg-on-scroll="changeNavBgOnScroll" />
     <slot name="before-container"></slot>
     <section
       class="container mx-auto px-4 lg:flex lg:gap-8 lg:justify-between"
-      :class="{ 'my-8': withMarginBottom }"
+      :class="{ 'pt-20': withPaddingTop }"
     >
       <slot name="content"></slot>
     </section>
@@ -20,9 +20,13 @@ export default {
     Navigation,
   },
   props: {
-    withMarginBottom: {
+    withPaddingTop: {
       type: Boolean,
       default: true,
+    },
+    changeNavBgOnScroll: {
+      type: Boolean,
+      default: false,
     },
   },
 }

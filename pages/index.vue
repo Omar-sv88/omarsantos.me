@@ -1,5 +1,5 @@
 <template>
-  <Wrapper :with-margin-bottom="false">
+  <Wrapper :with-padding-top="false" :change-nav-bg-on-scroll="true">
     <template #before-container>
       <Hero />
     </template>

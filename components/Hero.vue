@@ -1,5 +1,5 @@
 <template>
-  <section class="mb-20 lg:mb-4 bg-black w-full">
+  <section class="mb-20 pt-20 lg:mb-4 bg-black w-full">
     <div class="lg:relative container mx-auto">
       <header class="flex items-center justify-center lg:justify-end">
         <img
