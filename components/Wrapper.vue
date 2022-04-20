@@ -8,7 +8,7 @@
     >
       <slot name="content-sidebar"></slot>
     </section>
-    <section class="container my-12 mx-auto px-8">
+    <section class="container mx-auto px-8">
       <slot name="content"></slot>
     </section>
     <slot name="footer"></slot>
