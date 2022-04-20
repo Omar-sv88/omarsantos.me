@@ -1,6 +1,6 @@
 <template>
   <section class="mb-20 pt-20 lg:mb-4 bg-black w-full">
-    <div class="lg:relative container mx-auto">
+    <div class="lg:relative container mx-auto px-8">
       <header class="flex items-center justify-center lg:justify-end">
         <img
           :class="{ show: isMounted }"
