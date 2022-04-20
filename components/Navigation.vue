@@ -6,20 +6,20 @@
       'bg-black text-white': changeBgOnScroll && !isScrolled,
     }"
   >
-    <div class="container flex items-center justify-between">
-      <h1 class="text-2xl px-4">
+    <div class="container mx-auto px-8 flex items-center justify-between">
+      <h1 class="text-2xl">
         <NuxtLink to="/" class="text-indigo-500 text-4xl font-semibold"
           >OS</NuxtLink
         >
       </h1>
+      <nav>
+        <ul>
+          <li>
+            <NuxtLink to="/blog">Artículos</NuxtLink>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li>
-          <NuxtLink to="/blog">Artículos</NuxtLink>
-        </li>
-      </ul>
-    </nav>
   </section>
 </template>
 
