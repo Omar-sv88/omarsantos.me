@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="mt-12">
     <header class="mb-4">
       <h2 class="font-semibold text-2xl">{{ title }}</h2>
     </header>
