@@ -3,7 +3,7 @@
     <template #before-container>
       <Hero />
     </template>
-    <template #content>
+    <template #content-sidebar>
       <ArticleList />
       <CategoryList />
     </template>

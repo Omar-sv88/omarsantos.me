@@ -1,6 +1,6 @@
 <template>
   <Wrapper>
-    <template #content>
+    <template #content-sidebar>
       <ArticleList
         :title="`Artículos sobre ${$route.params.slug}`"
         :category="$route.params.slug"
