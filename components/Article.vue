@@ -49,11 +49,11 @@ export default {
 
 <style scoped>
 section {
-  opacity: 90%;
+  opacity: 0.9;
 }
 
 section:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 section header h3 {
