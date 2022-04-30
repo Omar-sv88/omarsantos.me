@@ -77,6 +77,7 @@ export default {
         'image',
         'category',
         'createdAt',
+        'slug',
       ],
     },
     limit: {
