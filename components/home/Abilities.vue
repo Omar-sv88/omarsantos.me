@@ -76,6 +76,11 @@ const abilities = [
     logo: 'nodejs.svg',
   },
   {
+    name: 'git',
+    years: 3,
+    logo: 'git.svg',
+  },
+  {
     name: 'SQL',
     years: 3,
     logo: 'sql.svg',
