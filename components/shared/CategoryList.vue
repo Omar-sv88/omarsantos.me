@@ -14,11 +14,7 @@
             :to="`/category/${category.path}`"
             class="py-2 px-4 flex items-center gap-2 font-semibold text-xl group-hover:text-indigo-500 transition-color"
           >
-            <img
-              class="logo"
-              :src="require(`~/assets/logos/${category.image}`)"
-              :alt="category.name"
-            />
+            <svg-icon class="w-8 h-8" :name="category.image" />
             {{ category.name }}
           </NuxtLink>
         </li>
@@ -32,17 +28,17 @@ const categoryList = [
   {
     name: 'Html',
     path: 'html',
-    image: 'html.png',
+    image: 'html.svg',
   },
   {
     name: 'Css',
     path: 'css',
-    image: 'css.png',
+    image: 'css.svg',
   },
   {
     name: 'JavaScript',
     path: 'javascript',
-    image: 'js.png',
+    image: 'javascript.svg',
   },
 ]
 
@@ -67,10 +63,5 @@ export default {
   .category-list {
     max-width: 250px;
   }
-}
-
-.logo {
-  width: auto;
-  height: 28px;
 }
 </style>
