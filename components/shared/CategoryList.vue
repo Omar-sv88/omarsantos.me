@@ -1,7 +1,7 @@
 <template>
   <section class="category-list mt-12">
-    <header class="mb-4">
-      <h2 class="font-semibold text-2xl">Categorías 🏷</h2>
+    <header class="mb-12">
+      <h2 class="font-semibold text-3xl">Categorías 🏷</h2>
     </header>
     <div class="content">
       <ul>

@@ -1,7 +1,7 @@
 <template>
   <section class="mt-12">
-    <header class="mb-4">
-      <h2 class="font-semibold text-2xl">{{ title }}</h2>
+    <header class="mb-12">
+      <h2 class="font-semibold text-3xl">{{ title }}</h2>
     </header>
     <div
       v-if="articles.length > 0"
@@ -16,7 +16,7 @@
     <div v-else class="content">
       <p class="text-center" v-html="withoutArticlesText"></p>
     </div>
-    <footer class="mt-8">
+    <footer v-if="haveNextPage || havePrevPage" class="mt-8">
       <Pagination
         :have-next="haveNextPage"
         :have-prev="havePrevPage"
