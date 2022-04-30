@@ -5,6 +5,7 @@ extract: 'Extract default'
 image: 'https://picsum.photos/640/360'
 category: 'css'
 createdAt: 2036-08-29
+slug: hello-css
 ---
 
 Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.
