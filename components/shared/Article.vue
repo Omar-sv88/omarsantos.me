@@ -8,7 +8,7 @@
       <h3
         class="absolute block p-2 bg-gray-100 text-indigo-700 font-semibold rounded"
       >
-        <NuxtLink :to="article.path">
+        <NuxtLink :to="`/blog/${article.slug}`">
           {{ article.title }}
         </NuxtLink>
       </h3>
@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     goToArticle() {
-      this.$router.push(this.article.path)
+      this.$router.push(`/blog/${this.article.slug}`)
     },
     getParsedDate(entryDate) {
       const date = new Date(entryDate)
