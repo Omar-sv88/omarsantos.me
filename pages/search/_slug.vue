@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import ArticleList from '~/components/ArticleList.vue'
-import Wrapper from '~/components/Wrapper.vue'
-import Footer from '~/components/Footer.vue'
-import CategoryList from '~/components/CategoryList.vue'
+import ArticleList from '~/components/shared/ArticleList.vue'
+import Wrapper from '~/components/layout/Wrapper.vue'
+import Footer from '~/components/layout/Footer.vue'
+import CategoryList from '~/components/shared/CategoryList.vue'
 
 export default {
   components: { ArticleList, Wrapper, Footer, CategoryList },
