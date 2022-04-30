@@ -40,7 +40,7 @@ export default {
     title: {
       type: String,
       required: false,
-      default: 'Últimos artículos ✍',
+      default: '✍ Últimos artículos',
     },
     category: {
       type: String,
@@ -49,7 +49,8 @@ export default {
     },
     canShowPagination: {
       type: Boolean,
-      required: true,
+      required: false,
+      default: true,
     },
     slug: {
       type: String,

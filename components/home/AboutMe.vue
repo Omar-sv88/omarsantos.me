@@ -1,7 +1,7 @@
 <template>
   <section class="mt-24">
     <header class="mb-12">
-      <h2 class="font-semibold text-3xl">Sobre mí 👨‍💻</h2>
+      <h2 class="font-semibold text-3xl">👨‍💻 Sobre mí</h2>
     </header>
     <div class="content text-lg">
       <p>
