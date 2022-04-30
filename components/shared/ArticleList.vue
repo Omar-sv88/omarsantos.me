@@ -16,7 +16,10 @@
     <div v-else class="content">
       <p class="text-center" v-html="withoutArticlesText"></p>
     </div>
-    <footer v-if="haveNextPage || havePrevPage" class="mt-8">
+    <footer
+      v-if="(haveNextPage || havePrevPage) && canShowPagination"
+      class="mt-8"
+    >
       <Pagination
         :have-next="haveNextPage"
         :have-prev="havePrevPage"
@@ -43,6 +46,10 @@ export default {
       type: String,
       required: false,
       default: undefined,
+    },
+    canShowPagination: {
+      type: Boolean,
+      required: true,
     },
     slug: {
       type: String,
