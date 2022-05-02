@@ -8,7 +8,10 @@
   >
     <div class="container mx-auto px-8 flex items-center justify-between">
       <h1 class="text-2xl">
-        <NuxtLink to="/" class="text-indigo-500 text-4xl font-semibold"
+        <NuxtLink
+          to="/"
+          class="text-indigo-500 text-4xl font-semibold"
+          title="Omar Santos"
           >OS</NuxtLink
         >
       </h1>
