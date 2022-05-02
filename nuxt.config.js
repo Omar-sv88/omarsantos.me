@@ -40,6 +40,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/sitemap',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -53,5 +54,9 @@ export default {
   },
   svgSprite: {
     input: '~/assets/logos/',
+  },
+  sitemap: {
+    hostname: 'https://omarsantos.me',
+    gzip: true,
   },
 }
