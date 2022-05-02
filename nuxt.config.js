@@ -47,9 +47,7 @@ export default {
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    serverFiles: ['./dist/dist/sitemap-routes.json'],
-  },
+  build: {},
   buildDir: 'dist',
   image: {
     domains: ['https://picsum.photos'],
@@ -61,4 +59,13 @@ export default {
     hostname: 'https://omarsantos.me',
     gzip: true,
   },
+  builds: [
+    {
+      src: 'nuxt.config.js',
+      use: '@nuxtjs/now-builder',
+      config: {
+        serverFiles: ['./dist/dist/sitemap-routes.json'],
+      },
+    },
+  ],
 }
