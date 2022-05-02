@@ -59,13 +59,4 @@ export default {
     hostname: 'https://omarsantos.me',
     gzip: true,
   },
-  builds: [
-    {
-      src: 'nuxt.config.js',
-      use: '@nuxtjs/now-builder',
-      config: {
-        serverFiles: ['./dist/dist/sitemap-routes.json'],
-      },
-    },
-  ],
 }
