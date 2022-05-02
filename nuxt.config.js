@@ -48,7 +48,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    serverFiles: ['./.nuxt/dist/sitemap-routes.json'],
+    serverFiles: ['./dist/dist/sitemap-routes.json'],
   },
   buildDir: 'dist',
   image: {
