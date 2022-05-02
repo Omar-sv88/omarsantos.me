@@ -4,6 +4,7 @@
       <ArticleList
         :title="`Artículos sobre ${$route.params.slug}`"
         :category="$route.params.slug"
+        class="mt-12"
       />
       <CategoryList />
     </template>
