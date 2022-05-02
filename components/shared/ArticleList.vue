@@ -98,8 +98,8 @@ export default {
     withoutArticlesText() {
       return this.category === 'Últimos artículos' ||
         this.category === undefined
-        ? 'No hay ningún artículo'
-        : `No hay ningún artículo sobre <i>${this.category}</i>`
+        ? 'No hay ningún artículo aún 😟'
+        : `No hay ningún artículo sobre <i>${this.category}</i> aún 😟`
     },
   },
   mounted() {
