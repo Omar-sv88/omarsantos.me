@@ -1,10 +1,7 @@
 <template>
   <Wrapper>
     <template #content-sidebar>
-      <ArticleList
-        :title="`Artículos sobre ${$route.params.slug}`"
-        :slug="$route.params.slug"
-      />
+      <ArticleList title="" />
       <CategoryList />
     </template>
     <template #footer>

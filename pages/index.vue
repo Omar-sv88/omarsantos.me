@@ -3,9 +3,10 @@
     <template #before-container>
       <Hero />
     </template>
-    <template #content-sidebar>
-      <ArticleList />
-      <CategoryList />
+    <template #content>
+      <AboutMe />
+      <Abilities />
+      <ArticleList :can-show-pagination="false" class="my-24" />
     </template>
     <template #footer>
       <Footer />
@@ -14,13 +15,14 @@
 </template>
 
 <script>
-import Wrapper from '~/components/Wrapper.vue'
-import Hero from '~/components/Hero.vue'
-import ArticleList from '~/components/ArticleList.vue'
-import CategoryList from '~/components/CategoryList.vue'
-import Footer from '~/components/Footer.vue'
+import Wrapper from '~/components/layout/Wrapper.vue'
+import Hero from '~/components/home/Hero.vue'
+import AboutMe from '~/components/home/AboutMe.vue'
+import Abilities from '~/components/home/Abilities.vue'
+import ArticleList from '~/components/shared/ArticleList.vue'
+import Footer from '~/components/layout/Footer.vue'
 
 export default {
-  components: { ArticleList, Wrapper, Footer, CategoryList, Hero },
+  components: { ArticleList, Wrapper, Footer, Hero, AboutMe, Abilities },
 }
 </script>

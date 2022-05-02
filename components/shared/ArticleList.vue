@@ -1,7 +1,7 @@
 <template>
-  <section class="mt-12">
-    <header class="mb-4">
-      <h2 class="font-semibold text-2xl">{{ title }}</h2>
+  <section>
+    <header class="mb-12">
+      <h2 class="font-semibold text-3xl">{{ title }}</h2>
     </header>
     <div
       v-if="articles.length > 0"
@@ -16,7 +16,10 @@
     <div v-else class="content">
       <p class="text-center" v-html="withoutArticlesText"></p>
     </div>
-    <footer class="mt-8">
+    <footer
+      v-if="(haveNextPage || havePrevPage) && canShowPagination"
+      class="mt-8"
+    >
       <Pagination
         :have-next="haveNextPage"
         :have-prev="havePrevPage"
@@ -37,12 +40,17 @@ export default {
     title: {
       type: String,
       required: false,
-      default: 'Últimos artículos ✍',
+      default: '✍ Últimos artículos',
     },
     category: {
       type: String,
       required: false,
       default: undefined,
+    },
+    canShowPagination: {
+      type: Boolean,
+      required: false,
+      default: true,
     },
     slug: {
       type: String,
@@ -69,6 +77,7 @@ export default {
         'image',
         'category',
         'createdAt',
+        'slug',
       ],
     },
     limit: {
@@ -89,8 +98,8 @@ export default {
     withoutArticlesText() {
       return this.category === 'Últimos artículos' ||
         this.category === undefined
-        ? 'No hay ningún artículo'
-        : `No hay ningún artículo sobre <i>${this.category}</i>`
+        ? 'No hay ningún artículo aún 😟'
+        : `No hay ningún artículo sobre <i>${this.category}</i> aún 😟`
     },
   },
   mounted() {
