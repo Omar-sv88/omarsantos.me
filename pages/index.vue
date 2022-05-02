@@ -6,7 +6,7 @@
     <template #content>
       <AboutMe />
       <Abilities />
-      <ArticleList :can-show-pagination="false" class="my-12" />
+      <ArticleList :can-show-pagination="false" class="my-24" />
     </template>
     <template #footer>
       <Footer />
