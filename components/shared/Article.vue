@@ -18,7 +18,7 @@
       </h3>
     </header>
     <div class="content p-4">
-      <header class="flex items-center justify-between">
+      <header class="flex items-center justify-between mb-2">
         <p class="text-sm text-gray-500">
           {{ getParsedDate(article.createdAt) }}
         </p>
