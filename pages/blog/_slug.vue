@@ -5,7 +5,7 @@
         <header class="mb-6">
           <img
             class="w-auto max-h-80 mb-6 mx-auto"
-            :src="article.image"
+            :src="require(`~/assets/images/${article.image}`)"
             :alt="article.title"
           />
           <h1 class="text-3xl font-bold">{{ article.title }}</h1>
