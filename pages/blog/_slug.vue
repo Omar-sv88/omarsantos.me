@@ -49,4 +49,16 @@ export default {
 .nuxt-content h1 {
   @apply text-3xl font-bold;
 }
+
+.nuxt-content p {
+  @apply mb-6;
+}
+
+.nuxt-content ol {
+  @apply list-decimal pl-4;
+}
+
+.nuxt-content pre {
+  @apply mb-6;
+}
 </style>
