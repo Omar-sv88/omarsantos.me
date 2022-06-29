@@ -4,7 +4,11 @@
     @click="goToArticle"
   >
     <header class="relative">
-      <img class="rounded-t" :src="article.image" :alt="article.title" />
+      <img
+        class="rounded-t"
+        :src="require(`~/assets/images/${article.image}`)"
+        :alt="article.title"
+      />
       <h3
         class="absolute block p-2 bg-gray-100 text-indigo-700 font-semibold rounded"
       >
