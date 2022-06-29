@@ -58,5 +58,6 @@ export default {
   sitemap: {
     hostname: 'https://omarsantos.me',
     gzip: true,
+    routes: ['/blog/como-recuperar-archivos-borrados'],
   },
 }
