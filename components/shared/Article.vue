@@ -10,7 +10,7 @@
         :alt="article.title"
       />
       <h3
-        class="absolute block p-2 bg-gray-100 text-indigo-700 font-semibold rounded"
+        class="absolute block p-2 bg-gray-100 text-indigo-700 font-semibold rounded shadow-lg"
       >
         <NuxtLink :to="`/blog/${article.slug}`">
           {{ article.title }}
