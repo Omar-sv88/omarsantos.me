@@ -40,6 +40,11 @@ const categoryList = [
     path: 'javascript',
     image: 'javascript.svg',
   },
+  {
+    name: 'Git',
+    path: 'git',
+    image: 'git.svg',
+  },
 ]
 
 export default {

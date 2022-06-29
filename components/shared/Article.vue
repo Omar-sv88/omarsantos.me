@@ -4,9 +4,13 @@
     @click="goToArticle"
   >
     <header class="relative">
-      <img class="rounded-t" :src="article.image" :alt="article.title" />
+    <img
+        class="rounded-t"
+        :src="require(`~/assets/images/${article.image}`)"
+        :alt="article.title"
+      />
       <h3
-        class="absolute block p-2 bg-gray-100 text-indigo-700 font-semibold rounded"
+        class="absolute block p-2 bg-gray-100 text-indigo-700 font-semibold rounded shadow-lg"
       >
         <NuxtLink :to="`/blog/${article.slug}`">
           {{ article.title }}
@@ -14,7 +18,7 @@
       </h3>
     </header>
     <div class="content p-4">
-      <header class="flex items-center justify-between">
+    <header class="flex items-center justify-between mb-2">
         <p class="text-sm text-gray-500">
           {{ getParsedDate(article.createdAt) }}
         </p>
