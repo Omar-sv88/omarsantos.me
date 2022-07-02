@@ -1,7 +1,7 @@
 ---
 title: Novedades ECMAScript® 2022
-description: Descubre todas las novedades de la nueva especificación para javascript ECMAScript® 2022'
-extract: Descubre todas las novedades de la nueva especificación para javascript ECMAScript® 2022'
+description: Descubre todas las novedades de la nueva especificación para javascript ECMAScript® 2022
+extract: Descubre todas las novedades de la nueva especificación para javascript ECMAScript® 2022
 image: 'novedades-ecmascript-2022.jpg'
 category: 'javascript'
 createdAt: 2022-07-01
@@ -16,27 +16,11 @@ Ten en cuenta que estas novedades no siempre se implementan en los diferentes na
 
 Vayamos al grano, estas son las novedades de **ECMAScript® 2022**.
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th>Novedad</th>
-      <th>Descripción</th>
-      <th>Ejemplo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1.</td>
-      <td>
-        <strong>Nuevos miembros para las clases</strong>
-      </td>
-      <td>
-        <p>Ahora las propiedades de las clases pueden ser <i>públicas</i>, <i>privadas</i>, <i>estáticas publicas</i> y <i>estáticas privadas</i>.</p>
-        <p>Para indicar que una propiedad o método es privado solo tenemos que poner <i>#</i> delante del nombre.</p>
-        <p>Para declarar una propiedad estática solo tenemos que poner <i>static</i> delante del nombre para poder usarla. Para hacer que la propiedad estática sea privada solo tenemos que poner <i>#</i> delante del nombre, ya que si no lo hiciéramos por defecto seria pública.</p>
-      </td>
-      <td>
+#### 1. Nuevos miembros para las clases
+
+Ahora las propiedades de las clases pueden ser _públicas_, _privadas_, _estáticas publicas_ y _estáticas privadas_.
+Para indicar que una propiedad o método es privado solo tenemos que poner _#_ delante del nombre.
+Para declarar una propiedad estática solo tenemos que poner _static_ delante del nombre para poder usarla. Para hacer que la propiedad estática sea privada solo tenemos que poner _#_ delante del nombre, ya que si no lo hiciéramos por defecto seria pública.
 
 ```js
 class MiClaseJS {
@@ -54,17 +38,9 @@ class MiClaseJS {
 }
 ```
 
-  </td>
-</tr>
-    <tr>
-      <td>2.</td>
-      <td>
-        <strong>Top Level Await</strong>
-      </td>
-      <td>
-        <p>Hasta ahora solo se podía usar <i>await</i> en el scope de una función. Con la nueva especificación ya podemos usarlo directamente sin necesidad de una función mientras que nuestros archivos .js estén cargados como módulos.</p>
-      </td>
-      <td>
+#### 2. Top Level Await
+
+Hasta ahora solo se podía usar _await_ en el scope de una función. Con la nueva especificación ya podemos usarlo directamente sin necesidad de una función mientras que nuestros archivos .js estén cargados como módulos.
 
 ```js
 /* Antes*/
@@ -76,18 +52,9 @@ async function getWeb() {
 const web = await fetch('https://omarsantos.me')
 ```
 
-  </td>
-</tr>
-</tr>
-    <tr>
-      <td>3.</td>
-      <td>
-        <strong>Nuevo método para los arrays <i>at</i></strong>
-      </td>
-      <td>
-        <p>Este nuevo método permite obtener un elemento desde un índice determinado, pudiendo pasarle índices negativos.</p>
-      </td>
-      <td>
+#### 3. Nuevo método para los arrays "_at_"
+
+Este nuevo método permite obtener un elemento desde un índice determinado, pudiendo pasarle índices negativos.
 
 ```js
 const frutas = ['manzana', 'pera', 'sandia', 'melón']
@@ -103,18 +70,9 @@ const pera = frutas.at(1)
 const sandia = frutas.at(-2)
 ```
 
-  </td>
-</tr>
-</tr>
-    <tr>
-      <td>4.</td>
-      <td>
-        <strong>Object.hasOwn</strong>
-      </td>
-      <td>
-        <p>Este nuevo método provee una nueva forma segura y siempre accesible que permite revisar si un objeto tiene ciertas propiedades.</p>
-      </td>
-      <td>
+#### 4. Object.hasOwn
+
+Este nuevo método provee una nueva forma segura y siempre accesible que permite revisar si un objeto tiene ciertas propiedades.
 
 ```js
 const persona = {
@@ -125,10 +83,5 @@ const persona = {
 console.log(Object.hasOwn(persona, 'pais')) // true
 console.log(Object.hasOwn(persona, 'edad')) // false
 ```
-
-  </td>
-</tr>
-  </tbody>
-</table>
 
 Como ves javascript sigue avanzando cada vez más. Espero que todo esto que te he contado te haya sido útil y lo empieces a poner en práctica.
