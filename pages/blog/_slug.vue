@@ -34,10 +34,21 @@ export default {
       .where({ slug: params.slug })
       .limit(1)
       .fetch()
-
     return article.length > 0
       ? { article: article[0], error: '', code: 200 }
       : { article: {}, error: 'Page not found', code: 404 }
+  },
+  head() {
+    return {
+      title: `${this.article.title} - Omar Santos`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.article.description,
+        },
+      ],
+    }
   },
   mounted() {
     if (this.code === 404) this.$router.push('/')
@@ -46,8 +57,36 @@ export default {
 </script>
 
 <style>
+.nuxt-content h1,
+.nuxt-content h2,
+.nuxt-content h3,
+.nuxt-content h4,
+.nuxt-content h5,
+.nuxt-content h6 {
+  @apply font-bold;
+}
+
+.nuxt-content h2,
+.nuxt-content h3,
+.nuxt-content h4,
+.nuxt-content h5,
+.nuxt-content h6 {
+  @apply mb-2;
+}
+
 .nuxt-content h1 {
-  @apply text-3xl font-bold;
+  @apply text-3xl;
+}
+.nuxt-content h2 {
+  @apply text-2xl;
+}
+.nuxt-content h3 {
+  @apply text-xl;
+}
+.nuxt-content h4,
+.nuxt-content h5,
+.nuxt-content h6 {
+  @apply text-lg;
 }
 
 .nuxt-content p {
@@ -60,5 +99,25 @@ export default {
 
 .nuxt-content pre {
   @apply mb-6;
+}
+
+.nuxt-content table {
+  @apply w-full text-sm text-left mb-6;
+}
+
+.nuxt-content table thead {
+  @apply text-xs text-gray-700 uppercase;
+}
+
+.nuxt-content table thead th {
+  @apply px-6 py-3 border border-gray-700;
+}
+
+.nuxt-content table tbody tr {
+  @apply bg-white border border-gray-700;
+}
+
+.nuxt-content table tbody td {
+  @apply px-6 py-4 border border-gray-700;
 }
 </style>
