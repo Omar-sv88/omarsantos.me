@@ -56,11 +56,26 @@ export default {
     input: '~/assets/logos/',
   },
   sitemap: {
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: '2022-06-01',
+    },
     hostname: 'https://omarsantos.me',
     gzip: true,
     routes: [
-      '/blog/como-recuperar-archivos-borrados',
-      '/blog/novedades-ecmascript-2022',
+      {
+        url: '/blog/como-recuperar-archivos-borrados',
+        changefreq: 'monthly',
+        priority: 0.5,
+        lastmod: '2022-06-29',
+      },
+      {
+        url: '/blog/novedades-ecmascript-2022',
+        changefreq: 'monthly',
+        priority: 0.5,
+        lastmod: '2022-07-01',
+      },
     ],
   },
 }
