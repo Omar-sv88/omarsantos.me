@@ -56,10 +56,12 @@ export default {
     input: '~/assets/logos/',
   },
   sitemap: {
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: '2022-07-02',
+    },
     hostname: 'https://omarsantos.me',
-    lastmod: '2022-07-02',
-    priority: '0.8',
-    changefreq: 'weekly',
     gzip: true,
     routes: [
       '/blog/como-recuperar-archivos-borrados',
