@@ -58,6 +58,9 @@ export default {
   sitemap: {
     hostname: 'https://omarsantos.me',
     gzip: true,
-    routes: ['/blog/como-recuperar-archivos-borrados'],
+    routes: [
+      '/blog/como-recuperar-archivos-borrados',
+      '/blog/novedades-ecmascript-2022',
+    ],
   },
 }
