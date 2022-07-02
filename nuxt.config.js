@@ -57,6 +57,9 @@ export default {
   },
   sitemap: {
     hostname: 'https://omarsantos.me',
+    lastmod: '2022-07-02',
+    priority: '0.8',
+    changefreq: 'weekly',
     gzip: true,
     routes: [
       '/blog/como-recuperar-archivos-borrados',
