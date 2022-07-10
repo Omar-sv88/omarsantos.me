@@ -62,6 +62,11 @@ export default {
           property: 'og:image',
           content: require(`~/assets/images/${this.article.image}`),
         },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
       ],
     }
   },
