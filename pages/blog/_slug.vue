@@ -47,6 +47,26 @@ export default {
           name: 'description',
           content: this.article.description,
         },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.article.title,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.article.description,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: require(`~/assets/images/${this.article.image}`),
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
       ],
     }
   },
